@@ -47,12 +47,12 @@ def processing():
 
         app.config['MAIL_SERVER']='smtp.gmail.com'
         app.config['MAIL_PORT'] = 465
-        app.config['MAIL_USERNAME'] = 'rahulkore976@gmail.com'
-        app.config['MAIL_PASSWORD'] = 'rahulkore976'
+        app.config['MAIL_USERNAME'] = 'abc@gmail.com'
+        app.config['MAIL_PASSWORD'] = '*****'
         app.config['MAIL_USE_TLS'] = False
         app.config['MAIL_USE_SSL'] = True
         mail = Mail(app)
-        msg = Message('Fraud', sender = 'rahulkore976@gmail.com', recipients = ['rahulkore976@gmail.com'])
+        msg = Message('Fraud', sender = 'abc@gmail.com', recipients = ['xyz@gmail.com'])
         msg.body = "Fraud has been detected in your credit card"
         mail.send(msg)
         return "Fraud detected"
